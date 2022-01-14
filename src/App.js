@@ -1,6 +1,8 @@
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
+import Profile from "./pages/Profile";
+import Quests from "./pages/Quests";
 
 import { Routes, Route } from "react-router-dom";
 import { VStack } from "@chakra-ui/react";
@@ -16,6 +18,8 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/Login" element={<Login />} />
+          <Route path="/Profile" element={<Profile />} />
+          <Route path="/Quests" element={<Quests />} />
         </Routes>
       </>
     );
